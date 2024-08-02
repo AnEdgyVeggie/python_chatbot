@@ -1,3 +1,4 @@
 data.json
 .venv
 chatbot_dnn.tflearn*
+checkpoint
