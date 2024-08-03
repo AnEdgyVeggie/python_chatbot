@@ -6,7 +6,7 @@ import pandas as pd
 import tflearn
 from nltk.stem.lancaster import LancasterStemmer
 import nltk    # NATURAL LANGUAGE TOOLKIT
-# nltk.download("punkt")  # REQUIRED IF NOT DONE PREVIOUSLY
+nltk.download("punkt")  # REQUIRED IF NOT DONE PREVIOUSLY
 os.environ['TF_ENABLE_ONEDNN_OPTS'] = '0'
 
 # SETS DEFAULT LISTS FOR THE DATA IN DATA.JSON
