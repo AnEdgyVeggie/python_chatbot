@@ -84,7 +84,7 @@ neural_network = tflearn.regression(neural_network)
 model = tflearn.DNN(neural_network)
 
 # THESE 2 LINES CAN BE COMMENTED OUT AFTER SAVING THE CHATBOT. CHECK DIRECTORY FOR chatbot_dnn.tflearn FILES
-# model.fit(train_X, train_Y, n_epoch=24000, batch_size=32, show_metric=True)
+# model.fit(train_X, train_Y, n_epoch=24000, batch_size=16, show_metric=True)
 # model.save("chatbot_dnn.tflearn")
 
 model.load("chatbot_dnn.tflearn")

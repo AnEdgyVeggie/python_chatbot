@@ -2,7 +2,6 @@ from create_chatbot_model import ask_chatbot, classes
 import os.path as op
 
 def talk_to_chatbot():
-    #SAVE INPUTS AND OUTPUTS TO TEXT FILE FOR ANALYSIS
     expected_tag = ""
 
     asking_questions = True
@@ -17,7 +16,6 @@ def talk_to_chatbot():
             asking_questions = False
 
 def gather_training_data():
-    print(classes)
     class_list = ""
     for index, c in enumerate(classes):
         class_list += f"[{index}]: {c}  |  "
@@ -37,7 +35,6 @@ def gather_training_data():
         while not correct_flag:
             if correct_tag == "1":
                 file_path = f"{response[1]}.txt"
-                print(f"FILE PATH: {file_path}")
                 file = open(file_path, "a")
                 file.write(f"{prompt}\n")
                 correct_flag = True
@@ -48,7 +45,7 @@ def gather_training_data():
                 correct_flag = True
                 file_path = f"{classes[int(correct_tag)]}.txt"
                 file = open(file_path, "a")
-                file.write(f"{prompt}\n")
+                file.write(f", \"{prompt}\"")
                 file.close()
 
 
