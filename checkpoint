@@ -1,2 +1,2 @@
-model_checkpoint_path: "C:\\Users\\Ethan\\Desktop\\DataScience\\python_chatbot\\chatbot_dnn.tflearn"
-all_model_checkpoint_paths: "C:\\Users\\Ethan\\Desktop\\DataScience\\python_chatbot\\chatbot_dnn.tflearn"
+model_checkpoint_path: "C:\\Users\\Honda\\Desktop\\DataScience\\chatbot\\chatbot\\chatbot_dnn.tflearn"
+all_model_checkpoint_paths: "C:\\Users\\Honda\\Desktop\\DataScience\\chatbot\\chatbot\\chatbot_dnn.tflearn"

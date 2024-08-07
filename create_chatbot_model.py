@@ -12,7 +12,7 @@ os.environ['TF_ENABLE_ONEDNN_OPTS'] = '0'
 # SETS DEFAULT LISTS FOR THE DATA IN DATA.JSON
 
 words = []              # A collection of all words in 'patterns'
-documents = []          # a collection of all
+documents = []          # a collection of all words and their associated tag
 classes = []            # a collection of the 'tags' in data.json
 training_data = []      # a collection of data used for training (used later)
 
@@ -83,9 +83,11 @@ neural_network = tflearn.regression(neural_network)
 
 model = tflearn.DNN(neural_network)
 
+# ==========================================================================================================
 # THESE 2 LINES CAN BE COMMENTED OUT AFTER SAVING THE CHATBOT. CHECK DIRECTORY FOR chatbot_dnn.tflearn FILES
-# model.fit(train_X, train_Y, n_epoch=24000, batch_size=16, show_metric=True)
+# model.fit(train_X, train_Y, n_epoch=24000, batch_size=8, show_metric=True)
 # model.save("chatbot_dnn.tflearn")
+# ==========================================================================================================
 
 model.load("chatbot_dnn.tflearn")
 
